@@ -1,6 +1,8 @@
-# Javascrtipt Practice
+# JavaScript Practice
 
 This is javascript basic practice to create simple aplication.
+
+## Blood Pressure Check
 
 In addition, this simple application has features:
 
