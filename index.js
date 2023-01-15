@@ -1,11 +1,16 @@
-const bloods = prompt(
-  "what was your blood pressure when you last checked? (sistonic)"
+// bps: bloodPressureSystolic
+// bpd: bloodPressureDiastolic
+
+const bloodPressureSystolic = prompt(
+  "What was your blood pressure when you last checked? (systolic)"
 );
 
-if (bloods < 120) {
-  console.log("your blood pressure is normal");
-} else if (bloods >= 120 && bloods <= 129) {
+if (bloodPressureSystolic >= 80 && bloodPressureSystolic < 120) {
+  console.log("Your blood pressure is normal");
+} else if (bloodPressureSystolic >= 120 && bloodPressureSystolic < 130) {
   console.log("Your blood pressure is up and almost close to hypertension!");
-} else if (bloods > 130) {
-  console.log("you have hypertension :(");
+} else if (bloodPressureSystolic >= 130) {
+  console.log("You have hypertension :(");
+} else {
+  console.log("You probably need to see a doctor immediately");
 }
